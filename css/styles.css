@@ -268,7 +268,6 @@ h2 {
   margin-top: 8px;
 }
 
-
 .svg-advantages-container {
   display: flex;
   justify-content: center;
@@ -366,7 +365,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: inherit;
   height: inherit;
   border-radius: inherit;
@@ -375,7 +374,6 @@ h2 {
 .link-social-team:hover,
 .link-social-team:focus {
   background-color: #31d0aa;
-
 }
 
 /* ================================Page products(Portfolio)===================== */
@@ -570,6 +568,60 @@ h2 {
 .item-social-footer > a:hover,
 .item-social-footer > a:focus {
   background-color: #31d0aa;
+}
+
+/* =======================================Modal=================================== */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: rgba(46, 47, 66, 0.4);
+
+  cursor: no-drop;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 408px;
+  height: 576px;
+
+  background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  cursor: default;
+  }
+
+.button-modal {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  width: 24px;
+  height: 24px;
+
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  background-image: url("/images/modal-close-buttom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 8px 8px;
 }
 
 /* ======================================================== */
