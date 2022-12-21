@@ -54,6 +54,11 @@ body {
   height: auto;
 }
 
+/* перебивка --> */
+.nav.current-page {
+  color: #404BBF;
+}
+
 .current-page {
   position: relative;
 }
@@ -417,11 +422,13 @@ h2 {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card {
-  cursor: pointer;
+.link-product-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
-.product-card:hover .products-subscription {
+.link-product-card:hover .products-subscription {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -475,7 +482,7 @@ h2 {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card:hover .product-overlay {
+.link-product-card:hover .product-overlay {
   transform: translateY(0);
 }
 
@@ -608,7 +615,7 @@ h2 {
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
 .link-item-social-footer:hover,
 .link-item-social-footer:focus {
@@ -672,7 +679,7 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  background-image: url('/images/modal-close-buttom.svg');
+  background-image: url('./images/modal-close-buttom.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px 8px;
