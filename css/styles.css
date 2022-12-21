@@ -679,7 +679,7 @@ h2 {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  background-image: url('./images/modal-close-buttom.svg');
+  background-image: url('../images/modal-close-buttom.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 8px 8px;
